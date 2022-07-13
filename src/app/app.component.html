@@ -1,0 +1,5 @@
+<app-navbar (event)="open($event)"></app-navbar>
+<app-login (event)="check($event)" *ngIf="toggle==false&&!value&&!cart"></app-login>
+<app-cart *ngIf="cart==true"></app-cart>
+<ngx-ui-loader></ngx-ui-loader>
+<app-home *ngIf="!cart" ></app-home>

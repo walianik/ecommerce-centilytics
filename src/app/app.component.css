@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+app-login {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: calc(100vh - 80px);
+    background: linear-gradient(120deg,#8cbbda,#1e1223);
+    background-size: cover;
+    padding: 50px 0;
+}
+app-navbar {
+    height: 80px;
+    display: flex;
+}
+app-home {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: calc(100vh - 80px);
+    background: linear-gradient(120deg,#8cbbda,#1e1223);
+    background-size: cover;
+    overflow-y: auto;
+}
+app-cart{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: calc(100vh - 80px);
+    background: linear-gradient(120deg,#8cbbda,#1e1223);
+    background-size: cover;
+    overflow-y: auto;
+}

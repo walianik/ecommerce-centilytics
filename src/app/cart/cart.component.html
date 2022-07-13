@@ -1,0 +1,21 @@
+<div class="row my-3 parent" *ngIf="products">
+    <div class="col-md-4" *ngFor="let element of products; index as i">
+        <!-- <h2>{{element.title}}</h2> -->
+        <div class="card">
+            <img class="card-img-top" [src]="element.image" alt="Card image cap">
+            <div class="card-body">
+            <h5 class="card-title">{{element.title}}</h5>
+            <p class="card-text">{{element.category}}</p>
+            <p class="card-text">{{element.price}}</p>
+            <p class="card-text description">{{element.description}}</p>
+            <a href="#" class="btn btn-primary" (click)="deleteITem(element,i)">Delete Item</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container notFound" *ngIf="products.length==0">
+    <div class="child">
+        <i class="bi bi-cart-x emptyCart"></i>
+        <h2 class="text-light">Your cart is Empty</h2>
+    </div>
+</div>
